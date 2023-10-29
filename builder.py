@@ -1,4 +1,3 @@
-# Producto que se va a construir
 class Product:
     def __init__(self):
         self.part1 = None
@@ -7,7 +6,6 @@ class Product:
     def __str__(self):
         return f"Parte 1: {self.part1}, Parte 2: {self.part2}"
 
-# Interfaz del Builder
 class Builder:
     def build_part1(self):
         pass
@@ -18,7 +16,6 @@ class Builder:
     def get_product(self):
         pass
 
-# Builder concreto que implementa la construcción del producto
 class ConcreteBuilder(Builder):
     def __init__(self):
         self.product = Product()
@@ -32,7 +29,6 @@ class ConcreteBuilder(Builder):
     def get_product(self):
         return self.product
 
-# Director que supervisa la construcción del producto
 class Director:
     def __init__(self, builder):
         self.builder = builder
