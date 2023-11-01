@@ -26,16 +26,3 @@ class ConcreteHandlerC(Handler):
             print("Manejado por ConcreteHandlerC")
         else:
             print("No se pudo manejar la solicitud")
-
-if __name__ == "__main__":
-    handlerA = ConcreteHandlerA()
-    handlerB = ConcreteHandlerB()
-    handlerC = ConcreteHandlerC()
-
-    handlerA.successor = handlerB
-    handlerB.successor = handlerC
-
-    requests = ["A", "B", "C", "D"]
-
-    for request in requests:
-        handlerA.handle_request(request)
