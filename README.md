@@ -3,4 +3,4 @@
 Diseño de Sistemas - Universidad de Mendoza - 2023 -
 Rodrigo Alvarez - 57008
 
-Se separaron los patrones por carpetas y modulos.
+Se separaron los patrones por carpetas y módulos.
