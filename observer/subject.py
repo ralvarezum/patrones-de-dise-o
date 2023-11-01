@@ -34,27 +34,3 @@ class ConcreteSubject(Subject):
 
     def get_state(self):
         return self._state
-
-class Observer(ABC):
-    @abstractmethod
-    def update(self, subject):
-        pass
-
-class ConcreteObserver(Observer):
-    def update(self, subject):
-        print(f"El estado del sujeto ha cambiado a {subject.get_state()}")
-
-if __name__ == "__main__":
-    subject = ConcreteSubject()
-
-    observer1 = ConcreteObserver()
-    observer2 = ConcreteObserver()
-
-    subject.attach(observer1)
-    subject.attach(observer2)
-
-    subject.set_state("Estado 1")
-
-    subject.detach(observer2)
-
-    subject.set_state("Estado 2")

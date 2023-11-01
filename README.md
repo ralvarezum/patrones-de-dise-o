@@ -2,3 +2,5 @@
 (AbstractFactory, Builder, ChainOfResponsibility, Command, FactoryMethod, Observer) + Extra: Singleton -
 Diseño de Sistemas - Universidad de Mendoza - 2023 -
 Rodrigo Alvarez - 57008
+
+Se separaron los patrones por carpetas y modulos.
